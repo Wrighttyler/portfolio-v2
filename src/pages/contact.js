@@ -1,42 +1,30 @@
 import React from "react";
-
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 function ContactPage() {
   return (
-    <Layout>
+    <>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Contact"
       />
-      <section>
-        <form>
-          <h2 className="mb-8 leading-loose">
-            Here is an example of a form built using the official Tailwind CSS Forms plugin.{` `}
-            <a
-              className="font-bold text-gray-700 no-underline"
-              href="https://github.com/tailwindlabs/tailwindcss-forms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read the docs
-            </a>
-            .
-          </h2>
+      <h1 className="text-4xl">Contact</h1>
+      <section className="w-full m-5 max-w-3xl">
 
+        <form>
           <label
-            className="block mb-2 text-xs font-bold uppercase"
+            className="block m-2 text-xs font-bold uppercase"
             htmlFor="first-name"
           >
             First Name
           </label>
 
           <input
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-2/3 mb-6 rounded-md border-gray-800  md:w-full"
             id="first-name"
-            placeholder="Bill"
+            placeholder="First Name"
             type="text"
+            required
           />
 
           <label
@@ -47,10 +35,26 @@ function ContactPage() {
           </label>
 
           <input
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-2/3 mb-6 rounded-md border-gray-800  md:w-full"
             id="last-name"
-            placeholder="Murray"
+            placeholder="Last Name"
             type="text"
+            required
+          />
+          <label
+            className="block mb-2 text-xs font-bold uppercase"
+            htmlFor="e-mail"
+          >
+            E-Mail
+          </label>
+
+          <input
+            className="w-2/3 mb-6 rounded-md border-gray-800  md:w-full"
+            id="last-name"
+            placeholder="E-mail"
+            type="email"
+            required
+
           />
 
           <label
@@ -61,18 +65,18 @@ function ContactPage() {
           </label>
 
           <textarea
-            className="w-full mb-6 rounded-md border-gray-800"
+            className="w-2/3 mb-6 rounded-md border-gray-800  md:w-full"
             id="message"
-            placeholder="Say something..."
+            placeholder="How can I help you?"
             rows="8"
           />
 
-          <button className="px-4 py-2 text-sm font-bold text-white bg-gray-700 border-b-4 border-gray-800 rounded hover:border-gray-700 hover:bg-gray-600">
+          <button className="px-4 py-2 w-2/3 text-sm font-bold text-white bg-blue-400 border-b-4 border-blue-500 rounded hover:border-blue-600 hover:bg-blue-700  md:w-full">
             Submit
           </button>
         </form>
       </section>
-    </Layout>
+    </>
   );
 }
 
