@@ -1,17 +1,17 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-
+import logo from "../images/logo.png"
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
   
 
   return (
-    <header className="fixed w-full bg-white shadow-md">
+    <header className="fixed w-full">
       <div className=" flex flex-wrap items-center justify-between  p-1  md:p-2">
         <Link to="/">
           <h1 className="flex items-center text-pink-700 no-underline">
             <span className="text-xl font-bold tracking-tight">
-             Tyler Wright Portfolio
+        <img src={logo} className="max-h-10"></img>
             </span>
           </h1>
         </Link>
@@ -51,7 +51,7 @@ function Header() {
            
           ].map((link) => (
             <Link
-              className=" mt-4 text-blue-400 no-underline md:inline-block md:mt-0 md:ml-6"
+              className=" font-semibold mt-4 text-blue-400 hover:text-yellow-500 no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >

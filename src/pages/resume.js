@@ -48,18 +48,18 @@ function ResumePage() {
 
       <section className="mx-auto w-full flex flex-col justify-center items-center md:flex-column">
 
-        <h1 className="text-4xl">Resume</h1>
-        <div className=" w-2/3 m-8 p-6 bg-gray-300 rounded-md">
+        <h1 className="text-4xl border-b-2 border-yellow-500">Resume</h1>
+        <div className=" w-2/3 m-8 p-6 bg-gray-100 rounded-md">
           <div className="border-r-2 border-gray-200 border-dotted absolute h-full top-0  -left-7" ></div>
           <ul className="list-none m-0 p-0">
             {workExperience.map(job => (
               <li key={job.id} className="mb-2">
                 <div className="flex items-center mb-1 ">
-                  <div className="bg-indigo-600 rounded-full h-4 w-4 border-gray-200 border-2 ">
+                  <div className="bg-yellow-600 rounded-full h-4 w-4 border-gray-200 border-2 ">
                   </div>
                   <div className=" ml-4 font-bold">{job.durationOfEmployment} - {job.position}</div>
                 </div>
-                <div className="  ml-10 text-left font-medium text-gray-500">
+                <div className="  ml-10 text-left font-medium text-blue-500">
                   {job.location}
                 </div>
                 <div className="ml-12 text-left ">

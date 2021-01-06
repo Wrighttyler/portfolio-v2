@@ -1,8 +1,8 @@
 import React from "react";
 
 import SEO from "../components/seo";
-import placeholderImg from "../images/coming-soon-store-placeholder-image.gif"
-import pigGameImg from "../images/PigGameThumbnail.jpg"
+
+
 
 function WorkPage() {
 
@@ -10,23 +10,20 @@ function WorkPage() {
         {
             title: "Pig Game",
             descripton: "A game of Pig created using HTML, CSS, and Javascript",
-            image: pigGameImg ,
             githubLink: "https://github.com/Wrighttyler/My-Portfolio-site",
             link: "https://frosty-kepler-104c54.netlify.app/"
         },
         {
             title: "NBA Player Stat App ",
             descripton: "A web app that allows users to search any NBA player and get their statistics. Created using ReactJS and MaterialUI",
-            image: placeholderImg ,
             githubLink: "https://github.com/Wrighttyler/nba-stat-app",
-            link: "https://frosty-kepler-104c54.netlify.app/"
+            link: "https://fervent-northcutt-56ffd9.netlify.app"
         },
         {
             title: "Portfolio v1",
             descripton: "The first iteration of this portfolio site. Created using HTML, CSS(SCSS), and JavaScript",
-            image: { placeholderImg },
             githubLink: "https://github.com/Wrighttyler/My-Portfolio-site",
-            link: "https://frosty-kepler-104c54.netlify.app/"
+            link: "https://adoring-mcclintock-0d9daa.netlify.app"
         },
 
 
@@ -41,7 +38,7 @@ function WorkPage() {
             />
 
 
-            <h1 className="text-2xl"> Projects</h1>
+            <h1 className="text-4xl border-b-2 border-yellow-500"> Projects</h1>
             <section className="mx-auto  flex flex-col flex-wrap  w-2/3 justify-center items-center md:flex-row">
                 {portfolioProjects.map(project => (
 

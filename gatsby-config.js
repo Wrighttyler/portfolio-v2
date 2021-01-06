@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Tyler Wright Web Developer Portfolio `,
+    description: `Hello! My name is Tyler and this is my web developr portfolio. Check out some of my work and let me know if you would like to work together!`,
+    author:`Tyler Wright`
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -15,13 +15,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `Tyler Wright Web Developer Portfolio`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["500"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/logo.png`,
       },
     },
     {
