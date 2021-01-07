@@ -7,7 +7,7 @@ function ContactPage() {
   return (
     <>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`,`web developer`, `portfolio`,`frontend`,`resume`]}
         title="Contact"
       />
       <h1 className="text-4xl border-b-2 border-yellow-500">Contact</h1>

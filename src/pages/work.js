@@ -39,17 +39,17 @@ function WorkPage() {
 
 
             <h1 className="text-4xl border-b-2 border-yellow-500"> Projects</h1>
-            <section className="mx-auto  flex flex-col flex-wrap  w-2/3 justify-center items-center md:flex-row">
+            <section className="mx-auto  flex flex-col flex-wrap  w-full md:w-2/3 justify-center items-center md:flex-row">
                 {portfolioProjects.map(project => (
 
-                    <div key className="m-auto px-4 py-8 max-w-sm ">
-                        <div className="bg-white flex flex-col shadow-2xl" >
+                    <div key className=" py-8 w-auto md:px-4 md:m-auto md:max-w-sm ">
+                        <div className="bg-white flex flex-col sm:w-auto shadow-2xl" >
                             <div>
                                 <img src={project.im} />
                             </div>
-                            <div className="px-4 py-2 mt-2 bg-white h-40">
-                                <h2 className="font-bold text-2xl text-gray-800 text-left">{project.title}</h2>
-                                <p className="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3 text-left">
+                            <div className="px-5 py-2 mt-2 bg-white h-auto md:h-40 w-full">
+                                <h2 className="font-bold text-lg text-gray-800 text-left">{project.title}</h2>
+                                <p className="sm:text-sm text-xs text-gray-700  mr-1 my-3 text-left">
                                     {project.descripton}
                                 </p>
                             </div>
