@@ -6,7 +6,7 @@ function Header() {
   
 
   return (
-    <header className="fixed w-full  sm:bg-gray-800 sm:shadow-md">
+    <header className="fixed w-full  bg-gray-800 sm:shadow-md">
       <div className=" flex flex-wrap items-center justify-between  p-1  md:p-2">
         <Link to="/">
           <h1 className="flex items-center text-pink-700 no-underline">
@@ -51,7 +51,7 @@ function Header() {
            
           ].map((link) => (
             <Link
-              className=" font-semibold sm:flex sm:flex-col mt-4 text-blue-400 hover:text-yellow-500 no-underline md:inline-block md:mt-0 md:ml-6"
+              className=" font-semibold flex flex-col mt-4 text-blue-400 hover:text-yellow-500 no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
               onClick={() => toggleExpansion(!isExpanded)}
